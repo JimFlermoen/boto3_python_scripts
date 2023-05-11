@@ -21,9 +21,9 @@ def list_objects_keys(client, bucket, prefix=""):
 if __name__ == '__main__':
     s3 = boto3.client('s3')
     
-    response = list_objects_keys(s3, "jfler-boto-05092023", "folder")
+    response = list_objects_keys(s3, "jfler-boto-05092023")
     print(response)
     
     
-    response = filter_objects_extension(s3, "jfler-boto-05092023", ".txt")
+    response = filter_objects_extension(s3, "jfler-boto-05092023")
     print(response)
