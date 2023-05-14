@@ -48,7 +48,6 @@ def new_list_comprehension():
     list_comprehension = [item['Text'] for item in input_text]
     print(list_comprehension)
 
-
 # Main Function - use to call other functions
 def main():
     new_input_text_list()
