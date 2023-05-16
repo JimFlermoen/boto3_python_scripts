@@ -1,8 +1,9 @@
 import boto3
 
+# # Create a client for DynamoDB
 dynamodb = boto3.client('dynamodb')
 
-
+## Write all 16 teams to the table NHL_Teams with batch_write_items
 response = dynamodb.batch_write_item(
     RequestItems={
         'NHL_Teams': [
